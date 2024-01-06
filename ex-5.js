@@ -10,3 +10,14 @@ function getAverageStudentScore(students) {
 }
 
 getAverageStudentScore(students); // Output: 87.5
+
+
+
+let totalSum=students.reduce(function(accumulator,order){
+  return accumulator+order.score
+},0)
+
+let avg=totalSum/4
+
+console.log(totalSum)
+console.log(avg)
